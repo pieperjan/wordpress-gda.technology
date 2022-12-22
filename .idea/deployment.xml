@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="german digtal allstars">
+    <serverData>
+      <paths name="german digtal allstars">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/html/wordpress-gda-technology/wp-content/themes/hello-theme-child-master" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/Assets/sass" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

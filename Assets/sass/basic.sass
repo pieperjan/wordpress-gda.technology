@@ -1,0 +1,29 @@
+@import "var"
+@import "mixins"
+@import "typografie"
+@import "navigation"
+@import "button"
+
+// ! Default Transition
+a,
+button,
+.elementor-button,
+.swiper-pagination-bullet,
+.quick-navi,
+.sub-arrow,
+li.menu-item > a,
+.line,
+.elementor-widget-container,
+i.icon,
+.elementor-widget-wrap,
+.elementor-post__card,
+.logos article.elementor-post
+  @include transition(all)
+
+// ! Elementor Location Header
+div.elementor-location-header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 90000

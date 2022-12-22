@@ -1,0 +1,158 @@
+@import "var"
+@import "mixins"
+
+// ! Navigation
+// ! Burger Button
+@media (max-width: $tablet-extra-max)
+  .navigation-toggler
+    .elementor-widget-container
+      .elementor-cta__bg-overlay
+        background: transparent !important
+      .elementor-cta__content
+        padding: 0
+        min-height: unset
+  .elementor-cta--skin-classic .elementor-cta__content
+    background-color: transparent !important
+  div.burger-button
+    padding: 10px
+    background-color: transparent !important
+    z-index: 90000
+    .line
+      margin-left: auto
+      display: block
+      height: 3px
+      background-color: black
+      &.one
+        width: 28px
+      &.two
+        width: 36px
+      &.three
+        width: 25px
+      &.one,
+      &.two
+        margin-bottom: 8px
+    &.open
+      .line
+        &.one
+          width: 30px
+          -webkit-transform: rotate(45deg) translate(8px, 8px)
+          -ms-transform: rotate(45deg) translate(8px, 8px)
+          transform: rotate(45deg) translate(8px, 8px)
+        &.two
+          width: 0
+        &.three
+          width: 30px
+          -webkit-transform: rotate(-45deg) translate(8px, -8px)
+          -ms-transform: rotate(-45deg) translate(8px, -8px)
+          transform: rotate(-45deg) translate(8px, -8px)
+
+          
+// ! Navigation
+.elementor-location-header
+  &.navbar-transition
+    background-color: rgba(255, 255, 255, 0.9)
+    .elementor-widget-theme-site-logo > .elementor-widget-container
+      padding-top: 0 !important
+      padding-bottom: 0 !important
+    
+    .quick-navi
+      padding-top: 10px !important
+      padding-bottom: 10px !important
+    
+  
+  div.elementor-element
+    nav.elementor-nav-menu--main,
+    div.ekit-wid-con
+      ul.elementor-nav-menu,
+      ul.elementskit-navbar-nav
+        @media (min-width: $tablet-extra-min)
+          &:hover,
+          &:focus,
+          &:focus-within
+            > li
+              > a
+                opacity: 0.5
+        > li.menu-item
+          &:nth-last-child(1),
+          &:nth-last-child(2)
+            > a
+              opacity: 1 !important
+          &:nth-last-child(2)
+            > a
+              margin-left: 30px
+              margin-right: 10px
+              @media (max-width: $laptop-max)
+                margin-left: 15px
+              
+              font-family: "Roboto", Sans-serif
+              font-size: 18px
+              font-weight: 600
+              text-transform: uppercase
+              line-height: 1.35em
+              color: white !important
+              background-color: $main-color
+              border: 0
+              border-radius: 50px
+              padding: 7px 12px 7px 12px
+            
+          
+        
+        li.menu-item
+          &.current_page_ancestor a.elementor-item,
+          &.current-menu-item a.elementor-item,
+          &.highlighted > a
+            color: $main-color !important
+            opacity: 1 !important
+            span.sub-arrow,
+            i.icon
+              -webkit-transform: rotate(90deg)
+              -ms-transform: rotate(90deg)
+              transform: rotate(90deg)
+          a.elementor-item,
+          a.ekit-menu-nav-link
+            @media (min-width: $tablet-extra-min)
+              span.sub-arrow,
+              i.icon
+                padding: 8px
+              &:hover,
+              &:focus,
+              &:focus-within
+                color: $main-color
+                -webkit-transform: translateY(-3px)
+                -ms-transform: translateY(-3px)
+                transform: translateY(-3px)
+                opacity: 1
+                span.sub-arrow,
+                i.icon
+                  -webkit-transform: rotate(180deg)
+                  -ms-transform: rotate(180deg)
+                  transform: rotate(180deg)
+          ul.sub-menu,
+          ul.elementskit-dropdown
+            @media (min-width: $tablet-extra-min)
+              background-color: white !important
+              padding: 0
+              border: 0 !important
+              border-top: 4px solid $main-color !important
+              -webkit-box-shadow: 0 1px 14px -8px #061534
+              box-shadow: 0 1px 14px -8px #061534
+              border: 1px solid #f7f7f7
+              > li.menu-item
+                > a.dropdown-item
+                  font:
+                    size: 18px
+                    weight: normal
+                  &:hover,
+                  &:focus,
+                  &:focus-within
+                    background-color: $main-color
+                    color: white
+                  
+                
+              
+            
+          
+        
+      
+    
+  
