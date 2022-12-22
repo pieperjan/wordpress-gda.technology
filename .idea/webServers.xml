@@ -2,8 +2,8 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="3c09a2a9-f884-4a01-8068-4720a6bd4fbb" name="german digtal allstars">
-        <fileTransfer accessType="SFTP" host="p582046.mittwaldserver.info" port="22" sshConfigId="3a734095-4efd-45c2-b458-0dc7b91c91dc" sshConfig="p582046@p582046.mittwaldserver.info:22 password">
+      <webServer id="3c09a2a9-f884-4a01-8068-4720a6bd4fbb" name="german digtal allstars" url="https://development.gda.technology/">
+        <fileTransfer rootFolder="/html/wordpress-gda-technology" accessType="SFTP" host="p582046.mittwaldserver.info" port="22" sshConfigId="3a734095-4efd-45c2-b458-0dc7b91c91dc" sshConfig="p582046@p582046.mittwaldserver.info:22 password">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" isUseRsync="true" />
           </advancedOptions>

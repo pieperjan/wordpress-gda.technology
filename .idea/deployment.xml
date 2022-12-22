@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="german digtal allstars">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="german digtal allstars" confirmBeforeUploading="false" autoUploadExternalChanges="true">
+    <option name="confirmBeforeUploading" value="false" />
     <serverData>
       <paths name="german digtal allstars">
         <serverdata>
           <mappings>
-            <mapping deploy="/html/wordpress-gda-technology/wp-content/themes/hello-theme-child-master" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/wp-content/themes/hello-theme-child-master" local="$PROJECT_DIR$" web="https://development.gda.technology/" />
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/Assets/sass" />
@@ -13,5 +14,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
   </component>
 </project>
