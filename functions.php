@@ -10,8 +10,8 @@
  * Enqueue styles
 */
 function child_enqueue_styles() {
-	wp_enqueue_style( 'basic-css', get_stylesheet_directory_uri() . '/Assets/css/basic.css','', '', 'all' );
-	wp_enqueue_style( 'theme-css', get_stylesheet_directory_uri() . '/style.css');
+	wp_enqueue_style( 'basic-sass', get_stylesheet_directory_uri() . '/Assets/css/basic.css','', '', 'all' );
+	wp_enqueue_style( 'theme-css', get_stylesheet_directory_uri() . '/style.ss');
 }
 
 add_action( 'wp_enqueue_scripts', 'child_enqueue_styles', 15 );
